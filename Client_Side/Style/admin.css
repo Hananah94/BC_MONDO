@@ -2,7 +2,7 @@
 {
 	font-size:1.4em;
 	padding-top:15px;
-	color:#00648D;
+	color:#8d0007;
 	display:inline-block;
 	font-weight:700;
 }
@@ -11,7 +11,7 @@
 	font-size:1.2em;
 	padding-top:25.5px;
 	padding-bottom:12px;
-	color:#00648D;
+	color:#d8000a;
 	display:inline-block;
 }
 #createScenario
@@ -20,7 +20,7 @@
 }
 .regTxt
 {
-	color:#00648D;
+	color:#000000;
 	display:inline-block;
 }
 .padBtm
@@ -33,7 +33,7 @@
 }
 label
 {
-	color:#00648D;
+	color:#000000;
 }
 .changeHost
 {
@@ -42,7 +42,7 @@ label
 .currConn
 {
 	border:2px solid #FFF;
-	color:#00648D;
+	color:#8d0007;
 	padding:5px;
 	margin-right:29px;
 	display: inline-block;
@@ -72,7 +72,7 @@ label
 	display:inline-block;
 	margin:10px 10px 10px 0;
 	width:210px;
-	color:#00648D;
+	color:#8d0007;
 }
 .peer div
 {
@@ -85,7 +85,7 @@ label
 	display:inline-block;
 	margin:10px 10px 10px 0;
 	width:210px;
-	color:#00648D;
+	color:#8d0007;
 }
 
 .confs
@@ -93,7 +93,7 @@ label
 	display:inline-block;
 	margin:10px 10px 10px 0;
 	width:210px;
-	color:#00648D;
+	color:#8d0007;
 }
 .confs div
 {
@@ -106,15 +106,14 @@ label
 	display:inline-block;
 	margin:10px 10px 10px 0;
 	width:210px;
-	color:#00648D;
-}
+	color:#8d0007
 .alR
 {
 	float:right;
 }
 .blueBack
 {
-	background-color:#00648D;
+	background-color:#8d0007;
 	color:#FFF;
 }
 .btn
@@ -122,7 +121,7 @@ label
 	display:inline-block;
 	height:1em;
 	width:1em;
-	border:2px solid #00648D;
+	border:2px solid #8d0007;
 	margin-top:2px;
 	margin-right:5px;
 	padding:5px;
@@ -140,7 +139,7 @@ label
 .grCrc
 {
 	display:inline-block;
-	background-color:#8CC63F;
+	background-color:#8d0007;
 	margin-top:0.4em;
 	height:0.6em;
 	width:0.6em;
@@ -150,7 +149,7 @@ label
 .rdCrc
 {
 	display:inline-block;
-	background-color:#A91024;
+	background-color:#8d0007;
 	margin-top:0.4em;
 	height:0.6em;
 	width:0.6em;
@@ -159,17 +158,17 @@ label
 }
 .carRw
 {
-	border-top: 2px solid #00648D;
-	border-bottom: 2px solid #00648D;
-	color: #00648D;
+	border-top: 2px solid #8d0007;
+	border-bottom: 2px solid #8d0007;
+	color: #8d0007;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding: 3px;
 }
 .pgBtn
 {
-	border: 2px solid #00648D;
-	color: #00648D;
+	border: 2px solid #8d0007;
+	color: #8d0007;
 	background-color: #FFF;
 	padding: 5px;
 	margin-top: 25.5px;
@@ -179,9 +178,9 @@ label
 }
 .pgBtn:hover
 {
-	border: 2px solid #00648D;
+	border: 2px solid #8d0007;
 	color: #FFF;
-	background-color:#00648D;
+	background-color:#8d0007;
 }
 #resMin
 {
@@ -203,9 +202,9 @@ label
 #typeTbl
 {
 	display:inline-block;
-	color:#00648D;
+	color:#8d0007;
 	border-collapse:collapse;
-	border:2px solid #00648D;
+	border:2px solid #8d0007;
 	table-layout: fixed;
 	float:left;
 }
@@ -221,7 +220,7 @@ label
 }
 .dropHdr td
 {
-	border-bottom:2px solid #00648D;
+	border-bottom:2px solid #8d0007;
 	padding:5px;
 	cursor:pointer
 }
@@ -232,13 +231,13 @@ label
 }
 .dropRw td:hover
 {
-	background-color: #00648D;
+	background-color: #8d0007;
 	color: #FFF;
 }
 #addUser
 {
-	border: 2px solid #00648D;
-    	color: #00648D;
+	border: 2px solid #8d0007;
+    	color: #8d0007;
     	padding: 5px;
     	font-weight: 100;
 	margin-left:25px;
@@ -247,13 +246,13 @@ label
 }
 #addUser:hover
 {
-	background-color:#00648D;
+	background-color:#8d0007;
 	color:#FFF;	
 }
 .editRw
 {
 	color:#00648D;
-	border: 2px solid #00648D;
+	border: 2px solid #8d0007;
 	padding:7px;
 	background-color:#FFF;
 }
@@ -266,7 +265,7 @@ label
 {
 	width:100%;
 	border: 0;
-	color: #00648D;
+	color: #8d0007;
 	font-size: 1em;
 	font-family: HelveticaNeue-Light,Helvetica,Arial,sans-serif;
 }
@@ -276,7 +275,7 @@ label
 }
 #errorRw
 {
-	border: 2px solid #00648D;
+	border: 2px solid #8d0007;
 	background-color: #A91024;
 	display:none;
 }
