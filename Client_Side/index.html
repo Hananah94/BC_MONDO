@@ -4,18 +4,18 @@
 		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="Style/main.css" ></link>
 		<script src="JavaScript/plugins/jQuery-1.11.3.js" type="text/javascript"></script>
-		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="node_modules/socket.io-client/dist/socket.io.min.js"></script>
 		<script>var pgNm = "Main";</script>
 		<script src="JavaScript/config/config.js" type="text/javascript"></script>
 		<script src="JavaScript/index/index.js"></script>
 	</head>
 	<body>
 		<table id="mainTbl" >
-			<tbody><tr>
+			<tr>
 				<td class="smlBrk"></td>
-				<td id="topRw"><img id="logo" src="./Icons/IBM_logo.svg" alt="company logo" text="company logo" style="width: 4em; height: 1.6em;"></td>
+				<td id="topRw"></td>
 				<td class="smlBrk"></td>
-				<td><img id="logo" src="./Icons/rtalogo.jpg" alt="company logo" text="company logo" style="width: 10em; height: 10em;" align="right"></td>
+				<td><img id="logo2" src="./Home_files/rtalogo.jpg" alt="company logo" text="company logo" style="width: 15em; height: 15em;" align="right"></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr>
@@ -40,7 +40,7 @@
 			</tr>
 			<tr>
 				<td class="smlBrk"></td>
-				<td style="font-size:1.5em; color:#000000;">Welcome RTA</td>
+				<td style="font-size:1.5em; color:#00648D;">Main Menu:</td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr class="prematureMsg" >
@@ -50,11 +50,11 @@
 				<td class="gapRw"></td>
 				<td class="smlBrk gapRw"></td>
 			</tr>
-			<!--<tr class="prematureMsg" >
+			<tr class="prematureMsg" >
 				<td class="smlBrk"></td>
 				<td class="prematureMsgTxt" colspan="3" ><img src="Images/loading.gif" height="50" /><br /><br />Just finalizing set up. Please wait...</td>
 				<td class="smlBrk"></td>
-			</tr>-->
+			</tr>
 			<tr class="welcomeMsg" >
 				<td class="smlBrk gapRw"></td>
 				<td class="gapRw"></td>
@@ -64,7 +64,7 @@
 			</tr>
 			<tr class="welcomeMsg" >
 				<td class="smlBrk"></td>
-				<td class="bxHd welcomeHeader" colspan="3" id="lftBxHd" >Welcome to the RTA Demo.</td>
+				<td class="bxHd welcomeHeader" colspan="3" id="lftBxHd" >Welcome to the Car Leasing Demo.</td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="welcomeMsg">
@@ -80,7 +80,7 @@
 			</tr>
 			<tr>
 				<td class="smlBrk"></td>
-				<td class="bxHd" colspan="3" id="lftBxHd" >Roads And Transport Authority</td>
+				<td class="bxHd" colspan="3" id="lftBxHd" >Regulator</td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="lnkTxt">
@@ -89,7 +89,7 @@
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="viewBlock" class="bordLR" style="padding: 0px 3px 0px 5px;" colspan="3" ><a href="regulator-view.html" >RTA View</a></td>
+				<td id="viewBlock" class="bordLR" style="padding: 0px 3px 0px 5px;" colspan="3" ><a href="regulator-view.html" >Regulator View</a></td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
@@ -109,27 +109,27 @@
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="manTrnsfr" class="bordLR" colspan="3" style="padding:8.5px 5px 8.5px 5px" ><a href="regulator.html" > RTA &rarr; CUSTOMS </a></td>
+				<td id="manTrnsfr" class="bordLR" colspan="3" style="padding:8.5px 5px 8.5px 5px" ><a href="regulator.html" > Regulator &rarr; Manufacturer </a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="manTrnsfr" class="bordLR" colspan="3" style="padding:0px 5px 8.5px 5px" ><a href="manufacturer.html" > CUSTOMS &rarr; DEALERSHIP </a></td>
+				<td id="manTrnsfr" class="bordLR" colspan="3" style="padding:0px 5px 8.5px 5px" ><a href="manufacturer.html" > Manufacturer &rarr; Dealership </a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="dlrTrnsfr" class="bordLR" colspan="3" style="padding:0 5px 0px 5px" ><a > DEALERSHIP &rarr; OWNER [INACTIVE] </a></td>
+				<td id="dlrTrnsfr" class="bordLR" colspan="3" style="padding:0 5px 0px 5px" ><a href="dealership.html" > Dealership &rarr; Lease Company </a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="lsCntrct" colspan="3" class="bordLR" style="padding:8.5px 5px 0px 5px"><a > OWNERSHIP APPROVAL - BANK [INACTIVE] </a></td>
+				<td id="lsCntrct" colspan="3" class="bordLR" style="padding:8.5px 5px 0px 5px"><a href="lease-company.html" > Lease Company &rarr; Leasee </a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="lsTrnsfr" colspan="3" class="bordLRB" style="padding:8.5px 5px 8.5px 5px" ><a > OWNERSHIP APPROVAL - INSURANCE [INACTIVE] </a></td>
+				<td id="lsTrnsfr" colspan="3" class="bordLRB" style="padding:8.5px 5px 8.5px 5px" ><a href="leasee.html" > Leasee &rarr; Scrap Merchant </a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr >
@@ -141,11 +141,11 @@
 			</tr>
 			<tr>
 				<td class="smlBrk"></td>
-				<td class="bxHd" id="lftBxHd" colspan="3" > Customs Verification </td>
+				<td class="bxHd" id="lftBxHd" colspan="3" > Update Asset </td>
 			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
-				<td id="lsTrnsfr" colspan="3" class="bordLRB" style="padding:8.5px 5px 8.5px 5px"><a href="manufacturer-update.html" >Customs Intake</a></td>
+				<td id="lsTrnsfr" colspan="3" class="bordLRB" style="padding:8.5px 5px 8.5px 5px"><a href="manufacturer-update.html" >Manufacturer Update</a></td>
 				<td class="smlBrk"></td>
 			</tr>
 			<tr>
@@ -155,10 +155,10 @@
 				<td class="smlGap"></td>
 				<td class="smlBrk smlGap"></td>
 			</tr>
-<!-- 			<tr>
+			<tr>
 				<td class="smlBrk"></td>
 				<td class="bxHd" id="lftBxHd" colspan="3" > Dispose Asset </td>
-			</tr> -->
+			</tr>
 			<tr  class="lnkTxt">
 				<td class="smlBrk"></td>
 				<td id="lsTrnsfr" colspan="3" class="bordLRB" style="padding:8.5px 5px 8.5px 5px"><a href="scrap-merchant.html" >Scrap Merchant &rarr; Scrap</a></td>
@@ -190,6 +190,7 @@
 			<tr>
 				<td class="smlBrk smlGap"></td>
 					<td style="color:#00648D; padding-top:25px">Version: 0.8</td>
+					<TD><img id="logo" src="./Home_files/IBM_logo.svg" alt="company logo" text="company logo" style="width: 4em; height: 1.6em;" align="right"></TD>
 				<td class="smlBrk smlGap"></td>
 			</tr>
 			<tr>
@@ -198,6 +199,7 @@
 				<td class="smlBrk smlGap"></td>
 				<td class="smlGap"></td>
 				<td class="smlBrk smlGap"></td>
+				
 			</tr>
 		</table>
 	</body>
